@@ -1,2 +1,2 @@
-import { test } from "./header/header.js";
-console.log("babe");
+import { example } from "./header/header.js";
+example();

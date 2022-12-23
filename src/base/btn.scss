@@ -1,0 +1,12 @@
+.btn {
+	font-family: inherit;
+	cursor: pointer;
+	border: none;
+	@include center(false);
+	&::after {
+		@include pseudo();
+	}
+	&:focus {
+		outline: none;
+	}
+}

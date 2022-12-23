@@ -1,0 +1,30 @@
+@mixin center-vertical($abs) {
+	position: relative;
+	@if ($abs == true) {
+		position: absolute;
+	}
+	top: 50%;
+	transform: translateY(-50%);
+}
+@mixin center-horizontal($abs) {
+	position: relative;
+	@if ($abs == true) {
+		position: absolute;
+	}
+	left: 50%;
+	transform: translateX(-50%);
+}
+@mixin center($abs) {
+	position: relative;
+	@if ($abs == true) {
+		position: absolute;
+	}
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+@mixin pseudo() {
+	content: "";
+	font-family: inherit;
+	color: inherit;
+}
