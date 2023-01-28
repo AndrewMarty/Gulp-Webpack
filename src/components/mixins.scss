@@ -1,24 +1,15 @@
-@mixin center-vertical($abs) {
-	position: relative;
-	@if ($abs == true) {
-		position: absolute;
-	}
+@mixin center-vertical() {
+	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
 }
-@mixin center-horizontal($abs) {
-	position: relative;
-	@if ($abs == true) {
-		position: absolute;
-	}
+@mixin center-horizontal() {
+	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
 }
-@mixin center($abs) {
-	position: relative;
-	@if ($abs == true) {
-		position: absolute;
-	}
+@mixin center() {
+	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);

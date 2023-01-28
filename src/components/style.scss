@@ -1,9 +1,11 @@
 // Other
 @import "vars";
 @import "mixins";
+
 // Base
 @import "../base/fonts";
 @import "../base/btn";
+
 // Components
 @import "header/header";
 body {
