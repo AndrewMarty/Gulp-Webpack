@@ -1,5 +1,5 @@
 
-# Gulp+Webpcack
+# Gulp+Webpack
 
 ## Installation
 
