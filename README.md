@@ -9,3 +9,7 @@ Install project with npm
   npm i
   npm run dev
 ```
+
+## Modules
+JQuery, Animate.css
+
