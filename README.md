@@ -13,3 +13,10 @@ Install project with npm
 ## Modules
 JQuery, Animate.css
 
+## Bem usage
+
+```bash
+  bem create block-name
+```
+
+
