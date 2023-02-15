@@ -19,4 +19,10 @@ JQuery, Animate.css
   bem create block-name
 ```
 
+## Finally build
+
+```bash
+  npm run build
+```
+
 
