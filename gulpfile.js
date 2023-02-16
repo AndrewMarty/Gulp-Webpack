@@ -17,6 +17,7 @@ import { server } from "./gulp/tasks/server.js";
 import { scss } from "./gulp/tasks/scss.js";
 import { js } from "./gulp/tasks/js.js";
 import { images } from "./gulp/tasks/images.js";
+import { svgSprive } from "./gulp/tasks/svgSprive.js";
 import { otfToTtf, ttfToWoff, fontsStyle } from "./gulp/tasks/fonts.js";
 import { ftp } from "./gulp/tasks/ftp.js";
 
@@ -27,6 +28,8 @@ function watcher() {
 	gulp.watch(path.watch.js, js);
 	gulp.watch(path.watch.images, images);
 }
+
+export { svgSprive };
 
 const fonts = gulp.series(otfToTtf, ttfToWoff, fontsStyle);
 

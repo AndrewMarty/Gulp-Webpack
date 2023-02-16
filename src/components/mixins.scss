@@ -14,8 +14,8 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
-@mixin pseudo() {
-	content: "";
-	font-family: inherit;
-	color: inherit;
+@mixin pseudo($display: block, $pos: absolute, $content: "") {
+	content: $content;
+	display: $display;
+	position: $pos;
 }
