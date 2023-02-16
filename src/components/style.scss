@@ -1,11 +1,9 @@
-// Other
-@import "vars";
-@import "../mixins/scss/mixins";
-
 // Base
-@import "normalize";
+@import "../base/vars";
+@import "../mixins/scss/mixins";
+@import "../base/normalize";
 @import "../base/fonts";
-@import "classes";
+@import "../base/classes";
 
 // Components
 @import "header/header";
