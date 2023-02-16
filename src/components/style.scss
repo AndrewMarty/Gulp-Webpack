@@ -1,14 +1,20 @@
 // Other
 @import "vars";
-@import "mixins";
+@import "../mixins/scss/mixins";
 
 // Base
+@import "normalize";
 @import "../base/fonts";
-@import "../base/btn";
+@import "classes";
 
 // Components
 @import "header/header";
+@import "footer/footer";
 body {
-	color: $test;
+	color: $pink;
 	font-family: "Montserrat";
+}
+body,
+html {
+	height: 100%;
 }
