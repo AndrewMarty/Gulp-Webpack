@@ -20,7 +20,9 @@ export const scss = () => {
 					})
 				)
 			)
-			.pipe(app.plugins.replace(/@img\//g, "../img/"))
+			.pipe(app.plugins.replace(/@img\//g, "../../public/img"))
+			.pipe(app.plugins.replace(/@layouts\//g, "../components/layouts/"))
+			.pipe(app.plugins.replace(/@components\//g, "../components/"))
 			.pipe(
 				sass({
 					outputStyle: "expanded",

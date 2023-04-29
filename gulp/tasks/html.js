@@ -15,8 +15,11 @@ export const html = () => {
 				)
 			)
 			// .pipe(fileInclude())
-			.pipe(pug({ pretty: true, verbose: true }))
 			.pipe(app.plugins.replace(/@img\//g, "img/"))
+			.pipe(app.plugins.replace(/@layouts\//g, "../src/components/layouts/"))
+			.pipe(app.plugins.replace(/@components\//g, "../src/components/"))
+			.pipe(app.plugins.replace(/@icon\//g, "img/icons/icons.svg"))
+			.pipe(pug({ pretty: true, verbose: true }))
 			.pipe(app.plugins.if(app.isBuild, webpHtmlNosvg()))
 			.pipe(
 				app.plugins.if(

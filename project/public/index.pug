@@ -1,0 +1,14 @@
+extends @layouts/main
+block variables
+   - title = 'Main'
+   - description = 'description of main'
+block content
+   .wrapper
+      include @components/header/header
+      main.content
+         .container
+            include ../src/components/content/content
+            img(src="@icon/#Phone", alt="")
+            p.example-text example of the simple text
+      include @components/footer/footer
+append scripts

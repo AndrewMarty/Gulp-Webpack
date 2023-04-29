@@ -1,18 +1,25 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	color: $cl-red;
+	font-family: 'Montserrat';
+}
+body,
+html {
+	font-size: $text-base-size;
+	height: 100%;
+}
 .container {
-	max-width: 1140px;
-	padding: 0 15px;
+	max-width: ($container + (2 * $container-padding));
+	padding: 0 $container-padding;
 	width: 100%;
 	margin: 0 auto;
-	&-small {
-		max-width: 940px;
-		width: 100%;
-		margin: 0 auto;
+	&_large {
+		max-width: $container-lg;
 	}
-	&-large {
-		max-width: 1440px;
-		padding: 0 20px;
-		width: 100%;
-		margin: 0 auto;
+	&_small {
+		max-width: $container-sm;
 	}
 }
 
@@ -76,7 +83,7 @@
 		border-radius: 2px;
 		border: 1px solid limegreen;
 		margin-right: 10px;
-		transition: $normal;
+		transition: $transition_normal;
 		&::after {
 			@include pseudo;
 			@include center;
